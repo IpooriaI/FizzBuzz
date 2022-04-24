@@ -19,7 +19,17 @@ namespace FizzBuzz.Tests
         }
 
         [Fact]
-        public void Checker_should_say_fizz_if_the_number_divided_by_3_is_0()
+        public void Checker_should_say_FizzBuzz_if_the_number_divided_by_3_and_5_is_0()
+        {
+            var number = 9;
+
+            var expectation = _sut.DivideBy3And5(number);
+
+            expectation.Should().Be("FizzBuzz");
+        }
+
+        [Fact]
+        public void Checker_should_say_Fizz_if_the_number_divided_by_3_is_0()
         {
             var number = 9;
 
@@ -29,7 +39,7 @@ namespace FizzBuzz.Tests
         }    
         
         [Fact]
-        public void Checker_should_say_buzz_if_the_number_divided_by_5_is_0()
+        public void Checker_should_say_Buzz_if_the_number_divided_by_5_is_0()
         {
             var number = 25;
 

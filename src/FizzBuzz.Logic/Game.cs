@@ -8,6 +8,20 @@ namespace FizzBuzz.Logic
 {
     public class Game
     {
+        public string DivideBy3And5(int number)
+        {
+            var dividedBy3 = number % 3;
+            var dividedBy5 = number % 5;
+            if (dividedBy3 == 0 && dividedBy5 == 0)
+            {
+                return "FizzBuzz";
+            }
+            else
+            {
+                return "";
+            }
+        }
+
         public string DivideBy3(int number)
         {
             var answear = number % 3;
