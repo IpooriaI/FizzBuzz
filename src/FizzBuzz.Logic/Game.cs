@@ -21,6 +21,19 @@ namespace FizzBuzz.Logic
             }
         }
 
+        public string DivideBy5(int number)
+        {
+            var answear = number % 5;
+            if (answear == 0)
+            {
+                return "Buzz";
+            }
+            else
+            {
+                return "";
+            }
+        }
+
 
     }
 }

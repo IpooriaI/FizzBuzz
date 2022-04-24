@@ -26,6 +26,16 @@ namespace FizzBuzz.Tests
             var expectation = _sut.DivideBy3(number);
 
             expectation.Should().Be("Fizz");
+        }    
+        
+        [Fact]
+        public void Checker_should_say_buzz_if_the_number_divided_by_5_is_0()
+        {
+            var number = 25;
+
+            var expectation = _sut.DivideBy5(number);
+
+            expectation.Should().Be("Buzz");
         }
 
     }
