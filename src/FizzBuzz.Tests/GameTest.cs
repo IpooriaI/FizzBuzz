@@ -19,13 +19,13 @@ namespace FizzBuzz.Tests
         }
 
         [Fact]
-        public void Number_is_devidable_to_3()
+        public void Checker_should_say_fizz_if_the_number_divided_by_3_is_0()
         {
-            var number = 50;
+            var number = 9;
 
-            var expectation = _sut.CheckDividableby3();
+            var expectation = _sut.DivideBy3(number);
 
-            expectation.Should().Be(0);
+            expectation.Should().Be("Fizz");
         }
 
     }
