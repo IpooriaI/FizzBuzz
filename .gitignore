@@ -9,6 +9,8 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.FizzBuzz.crunchsolution.cache
+*.FizzBuzz.executiontimes.cache
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -321,6 +323,9 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+*.ncrunchsolution
+*.ncrunchsolution.user
+
 
 # OpenCover UI analysis results
 OpenCover/
